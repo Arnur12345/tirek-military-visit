@@ -5,54 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mental Health Questionnaire</title>
     <style>
+        /* Global Styles */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #e8f0fe;
             color: #333;
         }
         h1 {
             text-align: center;
             margin-top: 50px;
+            color: #1a73e8;
+            font-size: 2rem;
         }
         .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 30px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
         }
+
+        /* Form Styles */
         .questionnaire label {
-            font-size: 1.1rem;
-            margin-bottom: 8px;
+            font-size: 1rem;
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 5px;
             display: block;
         }
         .questionnaire input {
             width: 100%;
             padding: 12px;
-            margin-bottom: 15px;
-            border-radius: 4px;
-            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
             font-size: 1rem;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
         }
+        .questionnaire input:focus {
+            border-color: #1a73e8;
+            outline: none;
+            box-shadow: 0px 0px 5px rgba(26, 115, 232, 0.3);
+        }
+
+        /* Button Styles */
         .questionnaire button {
             width: 100%;
-            padding: 14px;
-            background-color: #4CAF50;
+            padding: 15px;
+            background-color: #1a73e8;
             color: white;
             border: none;
-            border-radius: 4px;
+            border-radius: 6px;
             cursor: pointer;
             font-size: 1.1rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
         }
         .questionnaire button:hover {
-            background-color: #45a049;
+            background-color: #1664c4;
         }
+
+        /* Footer */
         .footer {
             text-align: center;
             margin-top: 20px;
+            font-size: 0.9rem;
+            color: #777;
         }
     </style>
 </head>
@@ -63,41 +86,41 @@
 <div class="container">
     <form method="post" class="questionnaire">
         <label for="question1">1. How often do you feel anxious?</label>
-        <input type="text" id="question1" name="question1">
+        <input type="text" id="question1" name="question1" placeholder="Type your answer here...">
 
         <label for="question2">2. Do you find it difficult to focus on tasks?</label>
-        <input type="text" id="question2" name="question2">
+        <input type="text" id="question2" name="question2" placeholder="Type your answer here...">
 
         <label for="question3">3. Do you often feel overwhelmed by stress?</label>
-        <input type="text" id="question3" name="question3">
+        <input type="text" id="question3" name="question3" placeholder="Type your answer here...">
 
         <label for="question4">4. Do you experience sleep disturbances?</label>
-        <input type="text" id="question4" name="question4">
+        <input type="text" id="question4" name="question4" placeholder="Type your answer here...">
 
         <label for="question5">5. Have you lost interest in activities you once enjoyed?</label>
-        <input type="text" id="question5" name="question5">
+        <input type="text" id="question5" name="question5" placeholder="Type your answer here...">
 
         <label for="question6">6. Do you feel disconnected from others?</label>
-        <input type="text" id="question6" name="question6">
+        <input type="text" id="question6" name="question6" placeholder="Type your answer here...">
 
         <label for="question7">7. Are you experiencing feelings of hopelessness?</label>
-        <input type="text" id="question7" name="question7">
+        <input type="text" id="question7" name="question7" placeholder="Type your answer here...">
 
         <label for="question8">8. Do you have trouble making decisions?</label>
-        <input type="text" id="question8" name="question8">
+        <input type="text" id="question8" name="question8" placeholder="Type your answer here...">
 
         <label for="question9">9. Have you been feeling sad or depressed recently?</label>
-        <input type="text" id="question9" name="question9">
+        <input type="text" id="question9" name="question9" placeholder="Type your answer here...">
 
         <label for="question10">10. Do you often experience mood swings?</label>
-        <input type="text" id="question10" name="question10">
+        <input type="text" id="question10" name="question10" placeholder="Type your answer here...">
 
         <button type="submit">Submit Answers</button>
     </form>
 </div>
 
 <div class="footer">
-    <p>Powered by Djedai</p>
+    <p>Powered by Mental Health Insights</p>
 </div>
 
 </body>

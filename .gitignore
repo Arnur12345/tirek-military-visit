@@ -1,1 +1,54 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
 venv/
+env/
+.venv/
+
+# Environment variables and secrets
+.env
+*.env
+*.env.*
+
+# Logs
+*.log
+*.pid
+*.out
+*.err
+
+# Database files
+*.sqlite3
+*.db
+db.sqlite3
+
+# Pytest cache and test artifacts
+.pytest_cache/
+*.pytest_cache/
+.coverage
+htmlcov/
+.coverage.*
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Miscellaneous
+*.bak
+*.tmp
